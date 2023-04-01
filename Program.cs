@@ -10,7 +10,6 @@
 // Функция: Вывод команд для работы с программой
 
 void Commands()
-
 {
     Console.WriteLine();
     Console.WriteLine("СПИСОК КОМАНД:");

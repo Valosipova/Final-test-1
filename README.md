@@ -8,10 +8,11 @@
 __Задача__
 Написать программу, которая из имеющегося массива строк формирует новый массив из строк, длина которых меньше, либо равна 3 символам. Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 __Примеры__
+~~~
 [“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
 [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 [“Russia”, “Denmark”, “Kazan”] → []
-
+~~~
 ## Решение
 
 * Блок-схема алгоритма на примере первого массива:
@@ -19,7 +20,7 @@ __Примеры__
  [Блок-схема](Block_diagram.png)
 
 * Код программы
-
+~~~
 void Commands()
 {
     Console.WriteLine();
@@ -35,7 +36,7 @@ string ReadInput(string msg)
     Console.Write(msg);
     return Console.ReadLine();
 }
-//  Функция вывода массива в терминал
+// Функция вывода массива в терминал
 void PrintArray(string[] array)
 {
     Console.Write("[ ");
@@ -46,7 +47,7 @@ void PrintArray(string[] array)
     Console.Write("] ");
 }
 Commands();
-string[] array = new string[] {};
+string[] array = new string[] { };
 string fromUser = ReadInput("Введите команду: ");
 switch (fromUser)
 {
@@ -81,4 +82,6 @@ for (int i = 0; i <= array.Length - 1; i++)
 PrintArray(array);
 Console.Write("→ ");
 PrintArray(newArray);
+~~~
+
 
