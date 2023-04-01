@@ -22,7 +22,7 @@ void Commands()
 string ReadInput(string msg)
 {
     Console.Write(msg);
-    return Console.ReadLine();
+    return Console.ReadLine()!;
 }
 // Функция вывода массива в терминал
 void PrintArray(string[] array)
